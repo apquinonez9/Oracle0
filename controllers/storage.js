@@ -58,16 +58,11 @@ const createItems = async(req,res)=>{
   
 };
 /***
- * actualizar registros
- * @param { * }req
- * @param { * }res
- */
-const updateItems = async(req, res) => {};
-/***
  *eliminar registros
  * @param { * }req
  * @param { * }res
  */
+
 const deleteItems = async(req, res) => {
   try{
     const { id }=matchedData(req)
@@ -90,4 +85,4 @@ const deleteItems = async(req, res) => {
 
   
 };
-module.exports = { getItems, getItem, createItems, updateItems, deleteItems };
+module.exports = { getItems, getItem, createItems, deleteItems };
