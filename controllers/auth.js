@@ -48,7 +48,7 @@ try{
         handleHttpError(res,"PASSWORD_INVALID",401);
         return
     }
-user.set('password',undefined,{Strict:false})
+    user.set('password',undefined,{Strict:false})
     const data={
         token:await tokenSign(user),
         user
