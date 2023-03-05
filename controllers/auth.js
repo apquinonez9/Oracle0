@@ -36,7 +36,7 @@ const loginCtrl= async (req,res)=>{
 try{
     req=matchedData(req)
     const user=await userModel.findOne({email:req.email})
-    .select('password name role email');
+    //.select('password name role email');
     if(!user){
         handleHttpError(res,"USER_NOT_EXITSTS",404);
         return
